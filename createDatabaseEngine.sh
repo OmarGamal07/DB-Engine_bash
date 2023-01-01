@@ -11,9 +11,10 @@ do
 		break;
 	fi
 done
-
+   #if not exist make database and go to folder databases 
     if [[ $flag == 1 ]];then
        mkdir ./$name;
        echo "done";
     fi
     cd ./$name;
+    . createDatabase.sh;  #go to menue databases
